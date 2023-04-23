@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.98.0" />
+    <title>Zupplie</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/cover/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.2/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.2/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
+
+    <style>
+      img {
+        opacity: 0.4;
+      }
+
+      body {
+        background-image: url(372113.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+      }
+
+      .glow {
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
+            0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3,
+            0 0 70px #121112;
+        }
+        to {
+          text-shadow: 0 0 20px #b64509, 0 0 30px #c2520c, 0 0 40px #d27511,
+            0 0 50px #7b2807, 0 0 60px #d59006, 0 0 70px #c63116,
+            0 0 80px #8e4f0b;
+        }
+      }
+
+      body:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #e1d8d8;
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
+      }
+
+      h2 {
+        font-size: 4 rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .title-text {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .glow {
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(162, 13, 13, 0.2);
+        border: solid rgba(0, 0, 0, 0.2);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .button_1 {
+        width: 400 px;
+        font-size: large;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet" />
+  </head>
+
+  <body class="d-flex h-100 text-center text-white bg-white">
+    <div id="bg-overlay"></div>
+    <rest here></rest>
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0 text-dark ;font-size:2 rem"></h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <form action="/logout?_method=DELETE" method="POST">
+              <button_1
+                class="nav-link fw-bold py-1 px-0 btn p-5 btn-dark text-white"
+                type="submit"
+                style="padding: 2px"
+              >
+                Logout
+              </button_1>
+            </form>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3">
+        <h1 class="title-text">Hello <span class="glow">Zupplers</span></h1>
+
+        <h2 class="text-white ; font-size:4rem">Welcome to Zupplie</h2>
+        <p class="lead"></p>
+      </main>
+
+      <footer class="mt-auto text-dark-50">
+        <p class="text-dark">
+          <a href="" class="text-light"></a>
+          <a href="" class="text-light">@Zupplie</a>.
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
