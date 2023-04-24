@@ -20,15 +20,13 @@
       <section class="background-radial-gradient overflow-hidden">
         <style>
           .background-radial-gradient {
-            background-color: hsl(218, 41%, 15%);
-            background-image: url(372113.jpg);
+            background-image: url("http://localhost:3000/372113.jpg");
             background-size: cover;
           }
 
           .bg-glass {
-            background-image: url(zupplie-3.jpg);
+            background-image: url("zupplie-3.jpg");
             background-size: cover;
-            backdrop-filter: saturate(200%) blur(25px);
           }
 
           .glow {
@@ -83,7 +81,7 @@
                     <div class="row">
                       <% if (locals.messages && messages.error) { %>
                       <div class="alert alert-danger">
-                        <strong><%= messages.error %> </strong>
+                        <strong> <%= messages.error %> </strong>
                       </div>
                       <% } %>
                       <h1 class="mb-3 h3">Login</h1>
